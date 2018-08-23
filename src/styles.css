@@ -6,3 +6,8 @@ image {
   max-width: 100%;
   height: auto;
 }
+
+@font-face {
+  font-family: 'Cinzel Regular';
+  src: url('./assets/fonts/Cinzel-Regular.otf');
+}
