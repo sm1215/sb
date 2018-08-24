@@ -1,6 +1,6 @@
 footer {
   background-color: #131313;
-  padding: 20px 0 70px 0;
+  padding-top: 20px;
 }
 
 h5, p {
@@ -52,6 +52,7 @@ ul {
 
 .info {
   background-color: #2c2c2c;
+  padding: 15px 0;
 }
 
 h6 {
