@@ -1,0 +1,34 @@
+.support {
+  height: 400px;
+  background-image: url('../../assets/images/support.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: flex-end;
+  padding: 100px 0 70px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.content {
+  width: 40%;
+}
+
+h2, p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #005d95;
+  color: #fff;
+}
+
+.cta:hover {
+  background-color: #fff;
+  color: #005d95;
+}
