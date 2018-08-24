@@ -98,8 +98,13 @@ h6 {
   align-items: center;
   align-content: flex-start;
   width: 100%;
+  margin: 0 25px;
 }
 
-.col-1 {
+.col {
+  width: 50%;
+}
+
+.c-1 {
   margin-right: 30px;
 }
