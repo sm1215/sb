@@ -1,0 +1,70 @@
+footer {
+  background-color: #131313;
+  padding: 20px 0 70px 0;
+}
+
+h5, p {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5089b1;
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+
+.contact a,
+.credits a {
+  text-decoration: underline;
+}
+
+.contact a:hover,
+.credits a:hover {
+  text-decoration: none;
+}
+
+.footer-nav h5,
+.footer-nav li {
+  text-align: center;
+}
+
+.footer-nav li {
+  margin-bottom: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-calendar h5,
+.footer-calendar p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.info {
+  background-color: #2c2c2c;
+}
+
+h6 {
+  color: #525252;
+}
+
+.footer-logo {
+  max-width: 180px;
+}
+
+/* Temporary for the "placeholder" label */
+.small {
+  font-size: 10px;
+  line-height: 10px;
+  font-style: italic;
+}
