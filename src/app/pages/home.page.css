@@ -1,8 +1,94 @@
 h1 {
-  font-family: Cinzel Regular, serif;
-  font-size: 65px;
-  line-height: 71px;
-  font-weight: 400;
-  color: #160a0b;
   text-align: center;
+}
+
+.main {
+  padding: 110px 0 0 0;
+}
+
+h1 {
+  margin: 0 auto 70px auto;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+.content {
+  padding-top: 35px;
+}
+
+.cta {
+  margin-bottom: 40px;
+}
+
+.upcoming {
+  border-bottom: 1px solid #333;
+  padding-bottom: 70px;
+  margin-bottom: 50px;
+}
+
+.welcome {
+  border-bottom: 1px solid #333;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.support {
+  background-image: url('../../assets/images/support.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: flex-end;
+  padding: 100px 0 70px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.tout {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.overlay h3 {
+  color: #fff;
+  font-size: 33px;
+  line-height: 53px;  
+  text-align: center;
+  position: relative;
+  top: 50%;
+  margin-top: -50%;
+}
+
+.tout:hover .overlay {
+  display: block;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  background-image: url('../../assets/images/corner-plus.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
