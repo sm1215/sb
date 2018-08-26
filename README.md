@@ -2,7 +2,15 @@
 
 Saltbox Theatre Collective
 
-## ABout
+## Development Ideas
+
+- Launch with static-based templates
+- Need a dynamic calendar solution
+- Incorporate Facebook feed
+- Add CMS
+- Companion app that can maybe post to both the site and Facebook, if that's a possible. Need to research
+
+## About
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
