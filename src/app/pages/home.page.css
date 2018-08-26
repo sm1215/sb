@@ -38,9 +38,15 @@ p {
   margin-bottom: 50px;
 }
 
+.col-container.past-performances {
+  margin: 0;
+  justify-content: space-between;
+}
+
 .tout {
   position: relative;
   cursor: pointer;
+  flex-basis: 32%;
 }
 
 .overlay {
@@ -91,5 +97,6 @@ p {
 }
 
 .tout img {
+  display: block;
   width: 100%;
 }
