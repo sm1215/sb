@@ -3,6 +3,10 @@ footer {
   padding-top: 20px;
 }
 
+h5 {
+  margin-bottom: 7px;
+}
+
 h5, p {
   color: #fff;
 }
@@ -14,6 +18,11 @@ a {
 
 a:hover {
   color: #5089b1;
+}
+
+.col-container {
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .contact {
@@ -36,12 +45,13 @@ a:hover {
 }
 
 .footer-nav li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .footer-calendar h5,
@@ -55,8 +65,17 @@ ul {
   padding: 15px 0;
 }
 
+.info .col-container {
+  align-items: center;
+}
+
 h6 {
   color: #525252;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-logo {
