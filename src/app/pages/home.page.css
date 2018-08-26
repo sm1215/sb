@@ -41,6 +41,7 @@ p {
 .col-container.past-performances {
   margin: 0;
   justify-content: space-between;
+  padding: 60px 0 50px 0;
 }
 
 .tout {
