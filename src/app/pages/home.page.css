@@ -30,12 +30,19 @@ p {
   border-bottom: 1px solid #333;
   padding-bottom: 70px;
   margin-bottom: 50px;
+  align-items: center;
 }
 
 .welcome {
   border-bottom: 1px solid #333;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  align-items: center;
+}
+
+.upcoming .col,
+.welcome .col {
+  flex-basis: 46%;
 }
 
 .col-container.past-performances {
@@ -98,6 +105,5 @@ p {
 }
 
 .tout img {
-  display: block;
   width: 100%;
 }

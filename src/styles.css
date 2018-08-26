@@ -25,7 +25,8 @@ body {
   margin: 0;
 }
 
-image {
+img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
