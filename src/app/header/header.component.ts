@@ -1,14 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor() { }
+  @ViewChild('nav') nav: ElementRef;
 
-  ngOnInit() {  }
+  // Toggle an alternate, smaller css layout for the nav
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll($event) {
+    const verticalOffset = window.pageYOffset 
+      || document.documentElement.scrollTop 
+      || document.body.scrollTop || 0;
+      
+    if (this.nav) {
+      let  action: string;
+      verticalOffset > 0 ? action = 'add' : action = 'remove';
+      this.nav.nativeElement.classList[action]('on');
+    }
+  }
 
+  constructor() {}
 }

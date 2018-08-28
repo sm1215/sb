@@ -18,13 +18,12 @@ nav {
 }
 
 .col {
-  width: 33%;
+  flex-basis: 33%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav-left,
-.nav-right {
-  display:flex;
-  margin-top: 20px;
+.col.nav-center {
   justify-content: center;
 }
 
@@ -34,10 +33,11 @@ a {
   font-size: 16px;
   line-height: 50px;
   letter-spacing: 0.5px;
+  text-align: center;
   font-weight: 300;
   text-decoration: none;
   position: relative;
-  padding: 10px 20px;
+  flex-basis: 33%;
 }
 
 a.active {
@@ -51,13 +51,35 @@ a.active .bg {
   background-color: #005d95;
   transform: skewX(-20deg);
   position: absolute;
-  top: 15px;
+  top: 5px;
   left: 0;
   z-index:-1;
 }
 
 .logo {
-  display: block;
+  /* display: block; */
+  /* max-width: 360px; */
+  /* margin:25px auto 0 auto; */
+}
+
+nav.on {
+  border-bottom: 2px solid red;
+  height: 60px;
+}
+
+nav.on .logo {
   max-width: 360px;
-  margin:25px auto 0 auto;
+}
+
+.col-container {
+  border: 1px solid purple;
+}
+.col {
+  border: 1px solid yellowgreen;
+}
+a {
+  border: 1px solid cyan;
+}
+a:hover{
+  background-color:rgba(255,0,0,.2);
 }
