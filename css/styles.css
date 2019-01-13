@@ -144,7 +144,7 @@ header .col-container {
 }
 
 header .col {
-  flex-basis: 36%;
+  flex-basis: 38%;
   display: flex;
   justify-content: space-between;
 }
@@ -157,7 +157,7 @@ header .col.nav-center {
 header a {
   font-family: Lato, sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 50px;
   letter-spacing: 0.5px;
   text-align: center;
