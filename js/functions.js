@@ -1,10 +1,14 @@
 var site = {
-  selectors: ['nav'],
+  selectors: ['nav', '.glider'],
   els: {},
   debounceTimeout: null,
+  navHover: false,
+  navTimer: undefined,
 
   init: function() {
     this.findEls();
+    this.scroll();
+    this.navLeave();
   },
 
   findEls: function() {
@@ -48,6 +52,39 @@ var site = {
       verticalOffset > 0 ? action = 'add' : action = 'remove';
       site.els.nav.classList[action]('on');
     }
-  }
+  },
 
+  navEnter: function(e) {
+    site.navHover = true;
+    var bg = $(e.target).find('.bg');
+    site.moveGlider(bg);
+
+    if (site.navTimer) {
+      window.clearTimeout(site.navTimer);
+    }
+  },
+
+  navLeave: function(e) {
+    if (!site.navHover) {
+      var active = $(site.els.nav).find('.active .bg');
+      site.moveGlider(active);
+    } else {
+      site.navTimer = setTimeout(function() {
+        site.navHover = false;
+        site.navLeave();
+      }, 750);
+    }
+  },
+
+  moveGlider: function(target) {
+    var pageOffset = $(target).offset().left;
+    var relativeOffset = parseInt($(target).css('left')) || Math.abs($(target).position().left);
+    var left =  pageOffset + relativeOffset;
+    var width = $(target).width();
+
+    $(site.els.glider).animate({
+      left: left + 'px',
+      width: width + 'px'
+    }, 200);
+  }
 }
